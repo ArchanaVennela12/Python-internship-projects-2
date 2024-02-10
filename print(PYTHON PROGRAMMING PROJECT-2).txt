@@ -1,0 +1,16 @@
+print("PYTHON PROGRAMMING PROJECT-2")
+def Countingofwords(s):    #Function definition for counting of words
+    stringlist=s.split()    #Converting input string into a list by using split function          
+    a=(len(stringlist))    #String manipulation function len() to finf length
+    return a
+    
+#EXCEPTIONAL BLOCK
+try:  #Exception Handling for empty input
+    s=input("Enter a String: ") #user input
+    if not s:
+        raise ValueError("Empty")
+except ValueError as e:
+    print(e)
+noofwords=Countingofwords(s)  #calling the function to find number of words
+print("OUTPUT OF THE PROGRAM:",noofwords)   #printing the number of words
+    
